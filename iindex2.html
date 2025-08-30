@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" >
+            <br>
+            <h1 class="head">Student Registration Form :</h1>
+            <br>
+        </header>
+        <br>
+        <div class="imgs" >
+            <a href="#footer">
+                <img src="téléchargement (1).jpeg" title="Click to scroll down !" height="80px" width="110Opx">
+            </a>
+        </div>
+        <br> 
+        <form action="index.php" method="post">
+              <div >
+                 <label for="fullname" class="mod"><b>Full name :</b></label>
+                 <input id="fullname" type="text" name="fullname" placeholder="fullname" required>
+              </div>
+              <br>
+              <div>
+                 <label for="email" class="mod"><b>Email:</b></label>
+                 <input id="email" type="email" name="email" placeholder="fullname@gmail.com" required>
+              </div>
+             <br>
+            <div>
+                <label for="pass" class="mod"><b>Password :</b></label>
+                <input id="pass" type="password" placeholder="password" name="password" required>
+            </div>
+            <br>
+
+            <!--date of birth-->
+            <div>
+                <label for="date-b" class="mod" >Date of birth :</label>
+                <input type="date" id=date-b name="birth-date" required>
+            </div>
+            <br>
+
+            <!--creation of a radio-->
+           <label class="mod"><b>Gender:</b></label>
+            <div>
+                <input id="male" type="radio" name="gender" value="male" >
+                <label for="male">male</label>
+            </div>
+            <div>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">female</label>
+            </div>
+            <br>
+
+            <!--creation of a dropdown list-->
+            <div>
+                <label for="grd" class="mod"><b>Grade level</b></label>
+                <select id="grd" name="grade-level" >
+                    <option value="freshman">Freshman</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label for="crs" class="mod">Courses</label>
+                <select id="crs" name="course">
+                    <option value="Informatique" >Informatique</option>
+                    <option value="mathematique" >Mathematique</option>
+                    <option value="ST" >ST</option>
+                    <option value="biologie" >Biologie</option>
+                    <option value="science de matiére" >Science de matiére</option>
+
+                </select>
+            </div>
+            <br>
+ 
+            <!--creation of a checkbox-->
+            <label class="mod"><b>Favorites subjects :</b></label>
+            <div>
+                <input id="analyse" type="checkbox" name="fav-sub" value="analyse" >
+                <label for="analyse">Analyse</label>
+            </div>
+            <div>
+                <input id="ASD" type="checkbox" name="fav-sub" value="">
+                <label for="ASD">Algorithmique & structures d données</label>
+            </div>
+            <div>
+                <input id="Structure machine" type="checkbox" name="fav-sub" value="Structure machine">
+                <label for="Structure machine">Structure machine</label>
+            </div>
+            <div>
+                <input id="Algébre" type="checkbox" name="fav-sub" value="Algébre">
+                <label for="Algébre">Algébre</label>
+            </div>
+            <div>
+                <input id="Physique" type="checkbox" name="fav-sub" value="Physique">
+                <label for="Physique">Physique</label>
+            </div>
+            <br>
+
+            <!--creation of textarea BIO-->
+            <label for="bio" class="mod"><b>Bio</b></label>
+            <div>
+              <textarea id="bio" placeholder="a short description about yourself " rows="5" cols="40"></textarea>
+           </div>
+           <br>
+
+           <!--Profile picture upload-->
+           <div >
+             <label for="pic"class="mod"><b>Click here to upload a profile picture!</b></label>
+             <input id="pic" type="file" name="file-prof-pic" value="profile-picture" >
+           </div>
+           <br>
+
+          <!--add phone nbr-->
+          <div id="footer">
+            <label for="nbr" class="mod">Add your legal representative number over here !</label>
+            <br>
+            <br>
+            <input type="tel" id="nbr" name="tel-nbr" placeholder="  0623569820" class="nbr-box">
+          </div>
+          <br>
+          <br>
+
+           <!--submet and reset buttons-->
+           <input type="submit" value="submit" class="sub" id="butt">
+           <input type="reset" value="reset" class="set" id="butt">
+        </form> 
+        <br>
+        <div class="imgs" >
+            <a href="#header">
+                <img src="téléchargement (1).jpeg" title="Click to scroll up !" height="80 px" width="110Opx">
+            </a>
+        </div>
+
+    </body>
+        
+    </body>
+</html>

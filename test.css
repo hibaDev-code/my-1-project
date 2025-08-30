@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0c1445, #16213e, #0f3460);
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #d4a76a;
+  overflow: hidden;
+  background-image: url('stars1.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  margin: 25px 0;
+  position: relative;
+  text-align: center;
+}
+
+/* Main Link */
+ul li a {
+  color: #f4d06f;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: rgba(26, 30, 40, 0.7);
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  width: 200px;
+  transition: transform 0.5s ease, background-color 0.5s, color 0.5s;
+  border: 1px solid #9b8b6b;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: relative;
+}
+
+ul li a:hover {
+  transform: scale(1.6);
+  background-color: #2a1b1b;
+  color: #fff3a0;
+  box-shadow: 0 0 30px rgba(255, 200, 100, 0.5);
+}
+
+/* === LARGE BACKGROUND TITLE (like before) === */
+ul li::before {
+  content: attr(data-text);
+  font-size: 70px;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.08);
+  opacity: 0;
+  pointer-events: none;
+  letter-spacing: 40px;
+  transition: 0.6s ease;
+  text-shadow: 0 0 20px rgba(255, 220, 100, 0.3);
+  white-space: nowrap;
+  z-index: -1;
+  font-family: 'Noto Sans Tifinagh', sans-serif;
+}
+
+ul li:hover::before {
+  opacity: 0.6;
+  letter-spacing: 6px;
+}
+
+/* === AMAZIGH SYMBOL APPEARS BELOW ON HOVER === */
+ul li a::after {
+  content: '';
+  position: absolute;
+  top: 50px; /* Position below the button */
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 3;
+  font-family: 'Noto Sans Tifinagh', sans-serif;
+  font-size: 50px;
+  color: #f4d06f;
+  text-shadow: 0 0 15px rgba(255, 200, 100, 0.7);
+  white-space: nowrap;
+}
+
+ul li a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* Individual Symbols per Link */
+#tamazgha::after { content: 'ⵣ'; } /* Yaz */
+#yaz::after { content: 'ⵣ'; font-size: 60px; color: gold; }
+#anzar::after { content: 'ⵇⵍ'; font-size: 40px; color: #a0d8f1; }
+#yenna::after { content: 'ⵢⵏⵏⴰ'; font-size: 35px; color: #e6af2e; }
+#tawwurt::after { content: 'ⵡ'; font-size: 50px; color: #b8d0a0; }
+#ikell::after { content: 'ⵇⵍⵇⵍ'; font-size: 30px; letter-spacing: 15px; color: #d4a76a; }
+#adrar::after { content: '▲'; font-size: 50px; color: #8b5e3c; transform: translateX(-50%) scale(1.2) rotate(180deg); }
+#tifinagh::after { content: 'ⵜⵉⴼⵉⵏⴰⵖ'; font-size: 35px; color: white; }
+
+/* Optional: Dim other items when one is hovered */
+ul:hover li a {
+  opacity: 0.6;
+  transform: scale(1);
+}
+ul:hover li:hover a {
+  opacity: 1;
+  transform: scale(1.6);
+}
+ul:hover li:hover a::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.2);
+}
+
+
+
+
+
+
+
+section{
+  background-image: url(stars1.png);
+  background-size: cover;
+  background-repeat: repeat;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+ul li{
+  list-style: none;
+  margin:16px 0;
+}
+
+ul li a{
+  text-decoration:none;
+  color:white;
+  letter-spacing: 4px;
+  font-size:30px;
+  font-weight:bold;
+  font-family:sans-serif;
+  background-color: darkblue;
+  padding: 6px 18px;
+  border-radius: 20px;
+  display:inline-block;
+  width:170px;
+  text-align:center;
+  transition:transform 0.5s;
+  transition: 0.5s;
+}
+ul:hover li a{
+  opacity:0;
+}
+ul li a:hover{
+  transform:scale(1.5);
+  background-color: darkmagenta;
+  opacity:1;
+}
+ul li::after{
+  content:attr(data-text);
+  font-size:80px;
+  color:white;
+  letter-spacing: 50px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  pointer-events: none;
+  text-shadow: 0 0 70px orangered;
+  opacity:0;
+  transition:0.5s;
+}
+ul li:hover::after{
+  opacity:0.5;
+  letter-spacing: 5px;
+}
+ul li::before{
+  content:"ⵣ";
+  font-size:180px;
+  color:white;
+  position:absolute;
+  left:50%;
+  top:50%;
+  pointer-events: none;
+  display:inline-block;
+  transform:translate(-50%,70%);
+  opacity:0;
+  text-shadow: 0 0 70px white;
+  transition:0.5s;
+}
+ul li:hover::before {
+  opacity:0.5;
+  font-size: 80px;
+}
+.yaz::after{
+  content:attr(data-text);
+  font-size:80px;
+  color:white;
+  letter-spacing: 50px;
+  content:"";
+  width:200px;
+  height:100px;
+  background-image:url(téléchargement.png) ;
+  background-position: center;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,70%);
+}
