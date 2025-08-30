@@ -8,7 +8,7 @@ body{
     overflow: hidden; 
 }
 section{
-  background-image:url(stars1.png);
+  background-image:url(images/stars1.png);
   background-size: cover;
   background-repeat: repeat;
   height:100vh;
@@ -72,7 +72,7 @@ ul li:hover::after{
   content:"";
   width:100vh;
   height:80vh;
-  background-image:url(téléchargement.png) ;
+  background-image:url(images/téléchargement.png) ;
   background-position: center;
   position:absolute;
   left:50%;
@@ -88,7 +88,7 @@ ul li:hover::after{
   content:"";
   width:100vh;
   height:80vh;
-  background-image: url(yen.jpg);
+  background-image: url(images/yen.jpg);
   background-position: center;
   position:absolute;
   left:50%;
@@ -109,7 +109,7 @@ ul li:hover::before {
   content:"";
   width:100vh;
   height:80vh;
-  background-image: url(taryel.jpg);
+  background-image: url(images/taryel.jpg);
   background-position: center;
   position:absolute;
   left:50%;
@@ -125,7 +125,7 @@ ul li:hover::before {
   content:"";
   width:100vh;
   height:80vh;
-  background-image: url(tanit.jpg);
+  background-image: url(images/tanit.jpg);
   background-position: center;
   position:absolute;
   left:50%;
@@ -141,7 +141,7 @@ ul li:hover::before {
   content:"";
   width:100vh;
   height:80vh;
-  background-image: url(anzar.jpg);
+  background-image: url(images/anzar.jpg);
   background-position: center;
   position:absolute;
   left:50%;
@@ -157,7 +157,7 @@ ul li:hover::before {
   content:"";
   width:100vh;
   height:80vh;
-  background-image: url(ayyur1.jpg);
+  background-image: url(images/ayyur1.jpg);
   background-position: center;
   position:absolute;
   left:50%;
